@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <style>
+            header,footer{
+                text-align:center;
+                background:navy;
+                padding:20px;
+            }
+            header>button{
+                background:rgb(87, 87, 237)
+                color:white;
+                padding:10px;
+                margin:10px;
+                border-radius:8px;
+                border:none;
+            }
+            .s1{
+                text-align:center;
+                height:300px;
+                color:white;
+                background:linear-gradient(to right, rgb(0, 0, 0, 0.6), rgb(0, 0,0, 0.6)),
+                url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YmVhY2glMjBzY2VuZXJ5fGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60');
+                background-repeat:no-repeat;
+                background-size:100%,100%;
+                padding:200px 20px;
+
+            }
+            .s2{
+                height:400px;
+                padding:30px;
+                text-align:center;
+            }
+            .s2 div{
+                display:inline-block;
+                height:150px;
+                width:200px;
+                padding:50px;
+                font-size:1.5rem;
+                color:white;
+                margin:10px;
+                border-radius:8px;
+
+                
+            } 
+            .s3{
+                height:400px;
+                padding:30px;
+                text-align:center;
+            }
+            .s3 div{
+                display:inline-block;
+                padding:20px;
+                width:200px;
+                border:2px solid blue;
+                border-radius:10px;
+                line-height:1.3;
+                margin:10px;
+            }
+            .s3 div:hover{
+                transform:translate(0px,-10px);
+                transition:all 0.5s;
+            }
+            span{
+                color:blue;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <button>Home</button>
+            <button>About</button>
+            <button>Services</button>
+            <button>Contact</button>
+        </header>
+
+        <section class="s1">
+            <h1>Welcome to Our Website</h1>
+            <p>This is a simple welcome message for our website.</p>
+        </section>
+
+        <section class="s2">
+            <h2>CSS COLORS</h2>
+            <div style="background:red">Red</div>
+            <div style="background:blue">Blue</div>
+            <div style="background:green">Green</div>
+            <div style="background:yellow">Yellow</div>
+        </section>
+        <section class="s3">
+            <h1>CSS Box Model</h1>
+            <div>
+                <h3><span>card one</span></h3>
+                <p>padding creates space inside the element</p>    
+            </div>
+            <div>
+                <h3><span>card two</span></h3>
+                <p>margin creates space outside the element</p>
+            </div>
+            <div>
+                <h3><span>card three</span></h3>
+                <p>border creates space around the element</p>
+            </div>
+        </section>
+        <footer>
+            @2026 All rights reserved | frontend development | by vamsi
+        </footer>
+
+    </body>
+</html>

@@ -1,0 +1,112 @@
+
+1) company - dilshaj infotech 
+2) freshers- resume or projects or jd
+3) communication- confidence
+
+technical
+1) java
+2) python
+3) aiml
+4) mern 
+
+frontend tech
+1) html
+what is html
+it is used to design the structure of a webpage
+
+doctype
+it specifies the type and version of a document
+
+semantics-nav,header,footer,section,article
+it conveys meaning about a content
+
+meta tags- 
+it provides the extra information about a webpage
+
+block level elements- div,h1,p,table
+it occupies the complete space  and always starts on new line
+
+inline elements-span , a,button,input,img
+it occupies the required space 
+
+forms attributes - method=get or post ,action
+input - name,class,id,type,placeholder,required
+
+
+2) css
+what is css
+it is used to describe the presentation of a webpage
+
+boxmodel
+it is used to describe the presentation of a element
+four components
+1) content- width and height
+2) padding
+3) border
+4) margin
+
+what is positions
+appearance and position of an element
+1) fixed 2) sticky 3) relative 4) absolute  5) static
+top bottom right left
+
+flex box
+it is one dimensional layout model that is used to create layouts
+
+parent properties
+1) display:flex;
+2) flex-direction:row-reverse;
+3) align-items:   controls the alignment on cross axis
+4) justify-content: contols the alignment on main axis
+5) gap- used to create a space between rows and cols
+
+child properties
+1) flex-basis
+2) order
+
+
+3) js
+it is a programming language that is used to add dynamic nature
+to the webpage
+
+js datatypes
+1) primitive - number,string,boolean ,undefined,null
+2) non primitive- arrays,object and functions
+
+var,let ,const
+var a=10;
+
+scopes
+global- var,let and const
+local scope- var,let and const
+block scope{}- let and const
+
+functions- reusable block of code that performs specific task 
+          when something invokes it
+
+types of functions
+1) named functions
+2) arrow functions
+3) anonymous functions 
+
+synchronous code-line by line execution
+asynchronous code-parallel level of execution
+
+let apilink='https://fakestoreapi.com/products'
+
+fetch(apilink).then(data=>data.json())
+.then(finaldata=>console.log(finaldata)
+.catch(err=>console.log(err)
+
+
+4) react
+react - it is used build single page applications
+
+features- spa, component based architecture
+
+hooks 
+1) useState - it is used to store data
+2) useEffect- it is used to call an api
+3) useNavigate- it is used for navigation
+4) useRef-it is used to store form data
+5) useMemo- it is used to improve the performance

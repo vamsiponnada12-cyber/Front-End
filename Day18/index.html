@@ -1,0 +1,150 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    </head>
+    <body>
+    <script>
+        /*
+        es-6 - pre requestic for react
+
+        scopes
+        let const var differences
+        localstorage
+        higher order functions - map filter redue
+        spread operator
+        destructuring
+
+        scopes- it is a life or accessibility of an variable
+
+        founder- branch, class,ofc- global scope
+        trainer- class but in the same ofc
+        student- only classroom
+
+
+        1) global 
+        when we declare varaible at global level var let const can be accessed from anywhere
+    
+        2) block scope
+        variable that are declared in the block , can be accessed within the block only
+        let and const 
+
+        3) local  scope or function scope
+        variable defined within the function can be accessed within only
+        
+        let founder='sai ram sir'
+        console.log(founder)
+
+        {
+        let trainer1='teja'
+        const trainer2='malli'
+        console.log(founder)
+        }
+
+        function classroom(){
+        var std1='vishalakshi'
+        let std2='sai'
+        const std3='siva'
+        console.log(founder)
+        console.log(std1,std2,std3)
+        }
+        classroom()
+        
+        variable terms
+
+        variable declaration
+        var a;
+        var a;
+
+        assignment
+        var a;
+        a=10;
+        a=20;
+
+        initialization
+        var b=10
+
+        hoisting
+        console.log(c)//undefined
+        var c=20
+
+        differences
+        var 
+        scopes - global,local
+        var can be redeclared
+        var can be reassigned or assignment is allowed
+        hoisting is allowed
+
+
+        let - global ,local,block
+        cannot redeclare
+        let can be reassigned or assignment is allowed
+        hoisting in not possible becuase it was in tdz (tempororal dead zone)
+
+
+        const- global ,local,block
+        cannot redeclare
+        assignment is not allowed
+        hoisting in not possible becuase it was in tdz (tempororal dead zone)
+
+
+        local storage 
+        session storage
+
+
+        JSON.stringify()
+        it is a method which convers js object into json object
+
+        JSON.parse()
+        is is a method which convers json into js object
+        
+        //how to sent data to the localstorage
+        // let pfs6student='sampath'
+        // localStorage.setItem('pfs6student',pfs6student)
+
+
+        //how to get data from the localstorage
+        // let data=localStorage.getItem('pfs6student')
+        // console.log(data)
+
+        // let pfs6students=[
+        //   {name:'sampath',id:'34'},
+        //   {name:'sai',id:'394'},
+        //   {name:'siva',id:'334'},
+        // ]
+
+        // localStorage.setItem('pfs6students',JSON.stringify(pfs6students))
+    
+    
+
+        let students=JSON.parse(localStorage.getItem('pfs6students'))
+        console.log(students)
+
+
+        higher order functions
+        map
+        map is used to transform the items of an array by applying provided function
+        for every element.it will always create new array
+
+
+        filter
+        filter is used to create filtered array by applying a boolean function 
+        for every element
+        */ 
+    let arr=[1,2,3,4,5,6]
+    let newarr=arr.map((val,ind,ar)=>{
+        return val*val
+    })
+    console.log(newarr)
+
+    let filteredarray=newarr.filter((val)=>{
+        return val%2==0
+    })
+    console.log(filteredarray)
+
+    </script>
+    
+    </body>
+    </html>

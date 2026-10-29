@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Calculator</h1>
+    <button onclick="inp('1')">1</button>
+    <button onclick="inp('2')">2</button>
+    <button onclick="inp('3')">3</button>
+    <br>
+    <button onclick="inp('+')">+</button>
+    <button onclick="inp('-')">-</button>
+    <button onclick="evl()">evl</button>
+    <button onclick="ac()">ac</button>
+    <script>
+        /*
+
+        functions
+        it is a reuseable block of code that is used to perform 
+        specific action when something invokes it
+
+        functions are defined with function keyword followed by
+        name followed by ()may include parameters followed by {} of courser
+
+
+        */
+
+        function greet(){
+            console.log('chai garam garam chai')
+        }
+        greet()
+        
+
+        function greetd(name){
+            console.log(`hello ${name} garam garam chai`)
+
+        }
+        greetd('bhai')
+
+
+        let input=''
+        function inp(val){
+            input+=val
+            console.log(input)
+        }
+        function evl(){
+            console.log(eval(input))
+        }
+        function ac(){
+            input=""
+            console.log('done')
+        }
+
+
+    </script>
+</body>
+</html>

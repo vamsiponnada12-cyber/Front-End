@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let arr = [34,435,645,22]
+        // let total = arr.reduce((acc,val,ind,ar)=>{
+        //     return acc+val
+        // },0)
+        // let count = arr.reduce((acc,val)=>{
+        //     return acc+1
+        // },0)
+        // console.log(total)
+        // console.log(count)
+        
+        // let sorted1 = arr.sort((a,b)=>{
+        //     return a-b
+        // })
+        // console.log(sorted1)
+//shallow copy:
+        let arr =['html','css','js']
+        let b = [...arr];
+        b[0]='react'
+        console.log(b)
+        console.log(arr)
+//spread operator:
+// it is used to copy the the values of iterables (arr,objects,strings)
+//it is used to merging arrs to objects
+
+        /*let frontend = ['html','css','js']
+        let backend = ['python','fastapi']
+        let fullstack =[...frontend,'react',...backend]
+        console.log(fullstack)
+
+        let obj1 = {name:'john'}
+        let obj2 = {age:23}
+        let obj3 = {...obj1,...obj2}
+        obj3.age = 25
+        console.log(obj3)
+        console.log(obj2)
+        let str='hello world'
+        let newstr=[...str]
+        console.log(newstr)
+
+        let products = [
+            {name:'mobile',price:20000,rating:4.4},
+            {name:'laptop',price:40000,rating:4.9},
+            {name:'earbuds',price:2000,rating:3.5},
+            {name:'charger',price:3000,rating:4.7}
+        ]
+
+
+        let updated = products.map((val,ind) => {
+            return {...val,priceafterdiscount:val.price-(val.price*0.2)}
+        })
+        console.log(updated)
+
+        let filteredarr=products.filter((val,ind)=>{
+            return val.rating>4
+        })
+        console.log(filteredarr)
+
+        let producttotal=products.reduce((acc,val)=>{
+            return acc+val.price
+        },0)
+        console.log(producttotal)
+
+        let sortedbyprice=products.sort((a,b)=>{
+            return a.price=b.price
+        })
+        console.log(sortedbyprice)
+*/
+
+    </script>
+</body>
+</html>

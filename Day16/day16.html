@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" id="registration">
+        <input type="text" id="inp1" placeholder="enter name"><br>
+        <input type="text" id="inp2" placeholder="enter password"><br>
+        <button type="submit">submit</button>
+    </form>
+
+    <script>
+        let registerform=document.getElementById('registerform')
+        registerform.onsubmit=function(event){
+            //it will prevent the automatic form submission
+            event.preventDefault()
+            console.log('form is submitted')
+            //1st using event
+            console.log(event.target[0].value)
+            console.log(event.target[1].value)
+        }
+    </script>
+</body>
+</html>

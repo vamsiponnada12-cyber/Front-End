@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // function addtocart(a){
+    //     console.log('products are added to the cart')
+    //     a(order)
+    // }
+    // function payment(b){
+    //     console.log('payment proccessed')
+    //     b()
+    // }
+    // function order(){
+    //     console.log('order placed')
+    // }
+
+    // addtocart(payment)
+    function username(bhai){
+        console.log('Enter the name')
+        bhai(login)
+    }
+    function password(fire){
+        console.log('checking the password')
+        fire()
+    }
+    function login(){
+        console.log('login successful')
+    }
+    username(password)
+
+
+
+    function outer(){
+        let c=0
+        console.log('outer fun')
+        return function(){
+            c++
+            console.log(c)
+    
+            console.log('inner fun')
+        }
+    }
+    // outer()()
+    // outer()()
+    let a=outer()
+    a()
+    a()
+
+    </script>
+</body>
+</html>

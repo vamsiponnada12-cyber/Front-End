@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>rampage</title>
+
+    </head>
+    <body>
+        <div id="container"></div>
+
+        <script>
+
+            // // let name=prompt('enter ur name');
+            // // let marks=+prompt('enter ur marks');
+            // // let grade='';
+            // // if(marks>70){
+            // //     grade="A";
+            // // }else if(marks>35){
+            // //     grade="B";
+            // // }else{
+            // //     garde="F";
+            // // }
+            // // console.log(`hello ${name} your marks are ${marks} so ur grade is ${grade}`);
+
+            // // let div=document.getElementById('container')
+            // // div.innerHTML='new content'
+            // // div.innerHTML='new text'
+            // // div.style.background='green'
+            // // div.style.color='white'
+            // // div.innerHTML=`hello ${name} your marks are ${marks} so ur grade is ${grade}`
+
+
+            // for(let i=1;i<=10;i++){
+            //     console.log(i)
+            // }
+
+            // let j=11;
+            // while(j<=20){
+            //     console.log(j)
+            //     j++
+            // }
+            // let k=21
+            // do{
+            //     console.log(k)
+            //     k++
+            // }while(k>30)
+
+
+            // let str='hello world'
+            // let arr=['html','css','js']
+            // let obj={name:'john',age:25}
+            // for(let i in str){
+            //     console.log(i)
+            //     console.log(str[i])
+            // }
+            // for(let i in arr){
+            //     console.log(i)
+            //     console.log(arr[i])
+            // }
+
+            // for(let i in obj){
+            //     console.log(i)
+            //     console.log(obj[i])
+            // }
+
+
+            // // while (true){
+            // //     let inp=prompt('enter food items')
+            // //     if (inp == 'done'){
+            // //         console.log('order placed')
+            // //         break;
+            // //     }
+            // //     console.log(inp)
+            // // }
+        
+
+            let data=[
+                { productid: 243, status: 'expired'},
+                { productid: 2433, status: 'expired'},
+                { productid: 2443, status: 'not expired'},
+                { productid: 24673, status: 'not expired'},
+                { productid: 243, status: 'expired'}
+
+            ]
+            for(let i of data){
+                if(i.status='expired'){
+                    continue
+                }
+                console.log(i)
+            }
+        </script>
+    </body>
+</html>
